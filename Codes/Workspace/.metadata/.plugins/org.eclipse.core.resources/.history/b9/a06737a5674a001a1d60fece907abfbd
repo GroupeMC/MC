@@ -1,0 +1,16 @@
+/*
+ * CharlesFuntionsUtilitaires.h
+ *
+ *  Created on: 8 févr. 2020
+ *      Author: chalo
+ */
+
+#ifndef CHARLESFUNTIONSUTILITAIRES_H_
+#define CHARLESFUNTIONSUTILITAIRES_H_
+
+	#include "stm32f0xx_hal.h"
+	
+
+
+
+#endif /* CHARLESFUNTIONSUTILITAIRES_H_ */
