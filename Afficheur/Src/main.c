@@ -212,13 +212,13 @@ int main(void)
 		GPIOA->ODR &= lettreA[5];
 		Attente(1106);*/
 
-		for(countlettre = 0; countlettre < 6; countlettre++){
+		/*for(countlettre = 0; countlettre < 6; countlettre++){
 			GPIOA->ODR |= 0xFF;
 			GPIOA->ODR &= lettreA[countlettre];
 			Attente(1106);
-		}
+		}*/
 
-		//afficheChar(GPIOA, 0, lettreA);
+		afficheChar(GPIOA, 0, &lettre[0][0]);
 
 		volatile int tailleMot = sizeof(mot)/sizeof(char);
 
