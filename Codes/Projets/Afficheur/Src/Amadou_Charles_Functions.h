@@ -41,6 +41,11 @@
 	*/
 	int LIRE_ENTREE(GPIO_TypeDef *GPIOx, int N);
 
+	/*
+	 * Affiche un caractère sur la plaquette tournante
+	*/
+	void afficheChar(GPIO_TypeDef *GPIOx, int poids, unsigned char tabLettre[]);
+
 
 
 #endif /* AMADOU_CHARLES_FUNCTIONS_H_ */

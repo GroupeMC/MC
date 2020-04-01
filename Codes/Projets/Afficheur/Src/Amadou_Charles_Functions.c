@@ -63,3 +63,17 @@ int LIRE_ENTREE(GPIO_TypeDef *GPIOx, int N){
 	}
 }
 
+/*
+ * Affiche un caractère sur la plaquette tournante
+*/
+void afficheChar(GPIO_TypeDef *GPIOx, int poids, unsigned char tabLettre[]){
+
+	volatile countlettre;
+	for(countlettre = 0; countlettre < 6; countlettre++){
+		GPIOx->ODR |= (0xFF << poids);
+		GPIOx->ODR &= (tabLettre[countlettre] << poids);
+		Attente(1106);
+	}
+
+}
+
