@@ -212,11 +212,11 @@ int main(void)
 		GPIOA->ODR &= lettreA[5];
 		Attente(1106);*/
 
-		/*for(countlettre = 0; countlettre < 6; countlettre++){
+		for(countlettre = 0; countlettre < 6; countlettre++){
 			GPIOA->ODR |= 0xFF;
 			GPIOA->ODR &= lettreA[countlettre];
 			Attente(1106);
-		}*/
+		}
 
 		//afficheChar(GPIOA, 0, lettreA);
 
@@ -224,7 +224,7 @@ int main(void)
 
 		// Afficher un mot de 1 à 60 caractères
 
-		volatile int i;
+		/*volatile int i;
 		int nombreCaractere = 0;
 		for (i = 0; i < tailleMot; i++){
 			if(mot[i] != ' '){
@@ -248,7 +248,7 @@ int main(void)
 			}
 		}
 
-	  }
+	  }*/
 
 
 
