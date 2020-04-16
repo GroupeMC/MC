@@ -87,6 +87,7 @@ static unsigned char Motif_Afficheur [180]={
 0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
 0xFF,0xFF,0xFF,0xFF,0xFF,0XFF
 };
+*/
 
 static unsigned char Motif_EI2I3 [180]={
 0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
@@ -121,7 +122,6 @@ static unsigned char Motif_EI2I3 [180]={
 0xFF,0xFF,0xFF,0xFF,0xFF,0XFF
 };
 
-*/
 
 /* declarer la variable globale : drapeau interruption externe de la Patte PA15 : fourche */ 
 // mettre votre code en dessous
@@ -296,9 +296,9 @@ int main(void)
 		  // ecrire le code en dessous
 		  // Challenge 1 : GPIOA et 0 pour ligne 1 & GPIOB, 8 pour la ligne 2
 
-		  affiche_heure(GPIOA, 0, heu_d, heu_u, min_d, min_u, sec_d, sec_u, count_indice_lettre, count_i);
+		  //affiche_heure(GPIOA, 0, heu_d, heu_u, min_d, min_u, sec_d, sec_u, count_indice_lettre, count_i);
 
-		  //affiche_Colonne(GPIOA, 0, Motif_EI2I3, count_indice_lettre);
+		  affiche_Colonne(GPIOA, 0, Motif_EI2I3, count_indice_lettre);
 
 		  /* preparer pour l'affichage de la colonne suivante */
 		  // ecrire le code en dessous
@@ -306,10 +306,10 @@ int main(void)
 		  count_i = (count_i+1) % 6;
 	  }
 
-	  if (flag_sec == 1){
+	  /*if (flag_sec == 1){
 		  flag_sec = 0;
 		  incremente_heure(&heu_d, &heu_u, &min_d, &min_u, &sec_d, &sec_u);
-	  }
+	  }*/
 
   }
   /* USER CODE END 3 */
