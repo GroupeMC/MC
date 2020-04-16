@@ -275,7 +275,7 @@ int main(void)
 		 
 		  /* remettre le drapeau interruption Timer dureePixel a '1' : TIM3 */
 		  // ecrire le code en dessous
-		  flag_Duree_Pixel = 1;
+		  flag_Tour_Complet = 0;
     
 		  /* arreter le timer tim17 */
 		  // ecrire le code en dessous
