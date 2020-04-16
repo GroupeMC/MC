@@ -1,0 +1,9 @@
+Amadou_Charles_Functions.c:14:6:RESET_PATTE	0	static
+Amadou_Charles_Functions.c:22:6:SET_PATTE	0	static
+Amadou_Charles_Functions.c:30:6:SET_BUS	0	static
+Amadou_Charles_Functions.c:39:6:RESET_BUS	0	static
+Amadou_Charles_Functions.c:48:6:Attente	8	static
+Amadou_Charles_Functions.c:57:5:LIRE_ENTREE	0	static
+Amadou_Charles_Functions.c:70:6:affiche_Colonne	16	static
+Amadou_Charles_Functions.c:77:6:incremente_heure	16	static
+Amadou_Charles_Functions.c:133:6:affiche_heure	16	static

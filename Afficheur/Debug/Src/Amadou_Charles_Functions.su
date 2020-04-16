@@ -1,7 +1,0 @@
-Amadou_Charles_Functions.c:13:6:RESET_PATTE	0	static
-Amadou_Charles_Functions.c:21:6:SET_PATTE	0	static
-Amadou_Charles_Functions.c:29:6:SET_BUS	0	static
-Amadou_Charles_Functions.c:38:6:RESET_BUS	0	static
-Amadou_Charles_Functions.c:47:6:Attente	8	static
-Amadou_Charles_Functions.c:56:5:LIRE_ENTREE	0	static
-Amadou_Charles_Functions.c:69:6:afficheChar	32	static
