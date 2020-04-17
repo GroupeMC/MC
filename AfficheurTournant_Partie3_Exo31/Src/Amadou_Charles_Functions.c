@@ -131,7 +131,7 @@ void incremente_heure(volatile int *heu_d, volatile int *heu_u, volatile int *mi
 }
 
 void affiche_heure(GPIO_TypeDef *GPIOx, int poids, volatile int heu_d, volatile int heu_u, volatile int min_d, volatile int min_u, volatile int sec_d, volatile int sec_u, volatile int count_indice_lettre, volatile int count_i){
-	switch (count_indice_lettre/6){
+	switch (count_indice_lettre){
 	case 0:
 	  affiche_Colonne(GPIOA, 0, &Lib_Caract_8x6[heu_d + 48][0], count_i );
 	  break;

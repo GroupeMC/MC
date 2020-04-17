@@ -296,20 +296,22 @@ int main(void)
 		  // ecrire le code en dessous
 		  // Challenge 1 : GPIOA et 0 pour ligne 1 & GPIOB, 8 pour la ligne 2
 
-		  //affiche_heure(GPIOA, 0, heu_d, heu_u, min_d, min_u, sec_d, sec_u, count_indice_lettre, count_i);
+		  affiche_heure(GPIOA, 0, heu_d, heu_u, min_d, min_u, sec_d, sec_u, count_indice_lettre, count_i);
 
-		  affiche_Colonne(GPIOA, 0, Motif_EI2I3, count_indice_lettre);
+		  //affiche_Colonne(GPIOA, 0, Motif_EI2I3, count_indice_lettre);
 
 		  /* preparer pour l'affichage de la colonne suivante */
 		  // ecrire le code en dessous
-		  count_indice_lettre++;
+		  if ( (count_i+1) == 6){
+			  count_indice_lettre++;
+		  }
 		  count_i = (count_i+1) % 6;
 	  }
 
-	  /*if (flag_sec == 1){
+	  if (flag_sec == 1){
 		  flag_sec = 0;
 		  incremente_heure(&heu_d, &heu_u, &min_d, &min_u, &sec_d, &sec_u);
-	  }*/
+	  }
 
   }
   /* USER CODE END 3 */
